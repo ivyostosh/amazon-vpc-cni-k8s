@@ -15,6 +15,8 @@
 set -e
 set -x
 
+export PATH=$PATH:$(go env GOPATH)/bin
+
 echo $PATH
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
