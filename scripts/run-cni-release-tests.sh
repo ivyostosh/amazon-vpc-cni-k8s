@@ -15,7 +15,7 @@
 set -e
 set -x
 
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="/root/go/bin/:${PATH}"
 
 echo $PATH
 
