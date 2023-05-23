@@ -13,12 +13,17 @@
 # CALICO_VERSION: calico version, default 3.22.0
 
 set -e
+set -x
+
+echo $PATH
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 INTEGRATION_TEST_DIR="$SCRIPT_DIR/../test/integration"
 
 source "$SCRIPT_DIR"/lib/cluster.sh
 source "$SCRIPT_DIR"/lib/integration.sh
+
+echo $PATH
 
 function run_integration_test() {
   : "${NG_LABEL_KEY:=kubernetes.io/os}"
