@@ -15,9 +15,8 @@
 set -e
 set -x
 
+export PATH="/usr/local/go/bin:${PATH}"
 export PATH="/root/go/bin/:${PATH}"
-
-echo $PATH
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 INTEGRATION_TEST_DIR="$SCRIPT_DIR/../test/integration"
