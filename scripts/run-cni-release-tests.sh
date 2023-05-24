@@ -13,7 +13,6 @@
 # CALICO_VERSION: calico version, default 3.22.0
 
 set -e
-set -x
 
 export PATH="/usr/local/go/bin:${PATH}"
 export PATH="/root/go/bin/:${PATH}"
